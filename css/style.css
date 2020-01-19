@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 導覽列 */
+nav {
+    padding: 20px;
+    /* 顯示:靈活 */
+    display: flex;
+    /* 均勻排列每個子元素,首個放起點,最後放終點 */
+    justify-content: space-between;
+    /* 盒型陰影：左右 上下 模糊 顏色 */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    /* 定位:黏住 */
+    position: sticky;
+    /* 上方 */
+    top: 0;
+    height: 3000px;
+    background-color: rgba(255, 255, 255, 0.9);
+    /* 深度:數字越大越上方 */
+    z-index: 1;
+}
+
+nav ol li {
+    /* 顯示:行內-區塊 */
+    display: inline-block;
+    padding: 0 50px;
+}
+
+nav ol li a {
+    color: black;
+    /* 文字裝飾:無 (去掉底線)  */
+    text-decoration: none;
+    color: black;
+    /* 文字裝飾:無 (去掉底線 ）  */
+    text-decoration: none;
+    line-height: 52px;
+    font-size: 20px;
+}
+
+nav ol li a:hover {
+    color: #9f0403;
+}
+
+#logo {
+    font-family: 'Noto Serif TC', serif;
+    font-weight: 900;
+    font-size: 32px;
+}
+
+
+#log img {
+    width: 50px;
+    width: 50px;
+    /* 垂直對齊:中間  */
+    vertical-align: middle;
+    margin-right: 10px;
+    background: #9f0403;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+
+#banner {
+    /* 100vh 100%螢幕高度  */
+    height: 200vh;
+    /* 背景圖片:連結("圖片位址"  */
+    background-image: url("https://i.pinimg.com/474x/b1/26/d9/b126d903bb586246f93f49f11c62b05d.jpg");
+    background-size: cover;
+    margin-top: -100px;
+}
